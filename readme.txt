@@ -4,3 +4,6 @@ How to launch:
 
 This site is builed via gulp.
 Used Block Element Model for arrange class names, scss for styles, js.
+
+Test this site: https://danchat-card-website.herokuapp.com/
+
