@@ -1,0 +1,50 @@
+.desktop-feauters {
+	background-color: #f3faff;
+
+	&__container {
+	}
+	&__header {
+		margin: 30px 0px 0px 0px;
+		text-align: center;
+		line-height: 1.25;
+		h3 {
+			font-size: 36px;
+			font-weight: 600;
+		}
+		h2 {
+			font-size: 42px;
+			font-weight: 600;
+			background-color: #2aa5a0;
+			background-image: linear-gradient(0, #1129b1, #1d9bac);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		p {
+			font-size: 16px;
+			color: #747b8b;
+		}
+	}
+	&__feauter {
+	}
+	&__row {
+	}
+}
+.row-feauters {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	h3 {
+		font-size: 26px;
+		line-height: 1.25;
+	}
+	&__feauter {
+    
+    flex: 0 1 33%;
+		text-align: center;
+	//	margin: 35px 0px 0px 0px;
+img{
+  min-width: 100px;
+  width:10vw}
+	}
+}

@@ -1,0 +1,133 @@
+.notebook {
+	display: block;
+	position: relative;
+	height: 700px;
+
+	&__decor {
+		position: absolute;
+		top: 12%;
+		max-width: 20%;
+
+		&_right {
+			left: 80%;
+			top: 20%;
+		}
+	}
+	&__note {
+		position: absolute;
+
+		left: 0%;
+		max-width: 100%;
+	}
+}
+
+.summary {
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+	@media (max-width: ($md2 + px)) {
+		//hide bg
+		background-color: #2ca4ec;
+	}
+  &__info {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    width: 400px;
+    margin: 0px 0px 0px 22vw;
+    text-align: left;
+  }
+  &__features{
+    //
+    ol{list-style-type: none; /* Убираем исходные маркеры */
+      counter-reset:  item;}
+    li {
+     &:before
+     {content:counter(item) ') '; /* Добавляем к числам скобку */
+      counter-increment: item;
+     }
+   //   padding: 0px 0px 0px 22vw;
+    }
+  }
+	//background: url("../../img/bg_top.png") no-repeat;
+	&__body {
+		position: relative;
+
+		padding: 100px 0px 0px 0px;
+		line-height: 2;
+		color: #ffffff;
+		text-align: center;
+		h1 {
+			font-size: 52px;
+			font-weight: 800;
+			@media (max-width: ($md2 + px)) {
+				font-size: 48px;
+			}
+		}
+
+    
+
+	}
+	&__span {
+    display: block;
+    margin: 5px 0px 0px 0px;
+ 		font-size: 18px;
+	}
+	&__bg {
+		z-index: -1;
+		position: absolute;
+		//width: 100%;
+		//object-fit: cover;
+		height: 100%;
+		top: 0;
+		left: 0;
+		@media (max-width: ($md2 + px)) {
+			//hide bg
+			display: none;
+		}
+
+		//
+	}
+	&__image-bg {
+	}
+	&__brilhant {
+		position: absolute;
+		top: 30%;
+		left: 20%;
+		opacity: 0.8;
+		animation: heartbeat 2s infinite;
+		&_right {
+			top: 50%;
+			left: 65%;
+		}
+	}
+	&__notebook {
+		@media (max-width: ($md2 + px)) {
+			display: none;
+		}
+	}
+	&__filler {
+		height: 50px;
+	}
+}
+
+//
+//
+@keyframes heartbeat {
+	0% {
+		transform: scale(0.75);
+	}
+	20% {
+		transform: scale(1);
+	}
+	40% {
+		transform: scale(0.75);
+	}
+	60% {
+		transform: scale(1);
+	}
+	80% {
+		transform: scale(0.75);
+	}
+	100% {
+		transform: scale(0.75);
+	}
+}
