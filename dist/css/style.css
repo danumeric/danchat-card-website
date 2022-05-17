@@ -974,7 +974,7 @@ body.ie ._ibg img {
 }
 
 .menu-header__ul li {
-  margin: 0px 0px 0px 40px;
+  margin: 0px 0px 0px 60px;
 }
 
 .menu-header__ul li:first-child {
@@ -983,11 +983,18 @@ body.ie ._ibg img {
 
 .menu-header__link {
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.75;
+}
+
+.menu-header__link:hover {
+  opacity: 1;
+  -webkit-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .menu-header__link_home {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .menu-header__icon {
@@ -1209,6 +1216,34 @@ body.ie ._ibg img {
   background-color: #f3faff;
 }
 
+.desktop-feauters__anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.desktop-feauters__table {
+  font-size: 18px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.desktop-feauters__table td {
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  padding: 10px 15px;
+  word-break: normal;
+  border-color: #58a7ff;
+  border-style: solid;
+  border-width: 2px;
+}
+
 .desktop-feauters__header {
   margin: 30px 0px 0px 0px;
   text-align: center;
@@ -1259,12 +1294,37 @@ body.ie ._ibg img {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33%;
           flex: 0 1 33%;
+  margin: 22px 0px 10px 0px;
   text-align: center;
 }
 
 .row-feauters__feauter img {
   min-width: 100px;
   width: 10vw;
+}
+
+footer {
+  padding: 10px 0;
+  text-align: left;
+  position: relative;
+}
+
+footer ul {
+  width: 400px;
+  margin: 0px 0px 0px 25vw;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+footer li:not(:nth-child(1)) {
+  list-style: none;
+  background: url("../img/icons/github.svg") left no-repeat;
+  background-size: 20px 20px;
+  padding: 0px 0px 0px 20px;
 }
 
 .page {
